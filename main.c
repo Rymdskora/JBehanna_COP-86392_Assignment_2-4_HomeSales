@@ -28,12 +28,12 @@ int main(void) {
     else if (strcmp(input, "E") == 0|| strcmp(input, "e") == 0) {
       printf("\nEnter sale amount for salesperson 'E': ");
       scanf("%s", input);
-      salesPersonD += atoi(input);
+      salesPersonE += atoi(input);
     }
     else if (strcmp(input, "F") == 0 || strcmp(input, "f") == 0) {
       printf("\nEnter sale amount for salesperson 'F': ");
       scanf("%s", input);
-      salesPersonD += atoi(input);
+      salesPersonF += atoi(input);
     }
     else {
       printf("\nError, invalid salesperson selected, please try again.");
@@ -47,10 +47,10 @@ int main(void) {
   if (salesPersonD > salesPersonE && salesPersonD > salesPersonE) {
     strcpy(highestSale, "D");
   }
-  else if (salesPersonE > salesPersonD && salesPersonE > salesPersonF) {
+  if (salesPersonE > salesPersonD && salesPersonE > salesPersonF) {
     strcpy(highestSale, "E");
   }
-  else if (salesPersonF > salesPersonD && salesPersonF > salesPersonE) {
+  if (salesPersonF > salesPersonD && salesPersonF > salesPersonE) {
     strcpy(highestSale, "F");
   }
   
