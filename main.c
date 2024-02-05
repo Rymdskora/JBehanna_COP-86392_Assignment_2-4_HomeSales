@@ -48,10 +48,10 @@ int main(void) {
     strcpy(highestSale, "D");
   }
   else if (salesPersonE > salesPersonD && salesPersonE > salesPersonF) {
-    strcpy(highestSale, "D");
+    strcpy(highestSale, "E");
   }
   else if (salesPersonF > salesPersonD && salesPersonF > salesPersonE) {
-    strcpy(highestSale, "D");
+    strcpy(highestSale, "F");
   }
   
   grandTotal = salesPersonD + salesPersonE + salesPersonF;
